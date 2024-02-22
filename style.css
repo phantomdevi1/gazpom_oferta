@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  transition: 0.5s;
+}
+body {
+  font-family: Roboto;
+  background: url(img/background_index.svg) no-repeat fixed;
+}
+header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.toolbar {
+  display: flex;
+  gap: 30px;
+  margin-left: 0px;
+  align-items: end;
+}
+.toolbar a {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.toolbar a:hover {
+  text-decoration: underline;
+}
+.gaz_num {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.gaz_num p {
+  color: #fff;
+  font-size: 20px;
+}
+.gaz_num span {
+  margin-right: 0px;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+/* index */
+.content_index {
+  margin-top: 110px;
+  width: 90%;
+}
+.dont_go {
+  color: #fff;
+  font-size: 96px;
+  font-weight: 500;
+}
+.sit_home {
+  color: #fff;
+  font-size: 96px;
+  font-weight: 500;
+  max-width: 840px;
+  margin-right: 0px;
+  margin-top: 140px;
+}
+
+.can_home-container {
+  margin-top: 170px;
+}
+.can_home-container p {
+  color: #fff;
+  font-size: 96px;
+  font-weight: 500;
+  max-width: 940px;
+  margin-top: 140px;
+  text-align: center;
+}
+.can_home-container button {
+  margin-top: 112px;
+  width: 60%;
+  margin-bottom: 50px;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  color: #1d6db4;
+  font-size: 46px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.can_home-container button:hover {
+  background-color: #1d6db4;
+  color: #fff;
+}
+
+.events {
+  margin-top: 200px;
+  width: 1000px;
+}
+
+.events h2 {
+  color: #fff;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.event {
+  display: grid;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.event-media img {
+  width: 630px;
+}
+.event-details {
+  background-color: #fff;
+  width: 600px;
+  padding: 15px;
+}
+.event-date {
+  color: grey;
+  font-weight: 300;
+}
+.event-title {
+  font-size: 25px;
+  color: #1d6db4;
+  margin-top: 15px;
+}
+.event-description {
+  margin-top: 5px;
+}
+
+.admin_input {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border: 2px solid black;
+  z-index: 9999;
+  width: 30%;
+  height: 300px;
+  flex-direction: column;
+  border: 5px solid #1d6db4;
+  border-radius: 5px;
+}
+.admin_input h2 {
+  margin-bottom: 8%;
+  color: #1d6db4;
+  font-size: 40px;
+}
+.admin_form {
+  width: 60%;
+  display: grid;
+}
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.admin_form input {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #1d6db4;
+  height: 30px;
+  width: 70%;
+  font-size: 20px;
+}
+.admin_input-btn {
+  display: flex;
+  cursor: pointer;
+  background-color: #1d6db4;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  width: 70%;
+  justify-content: center;
+  height: 20px;
+  font-size: 20px;
+}
+.admin_input-btn:hover {
+  background-color: blue;
+}
+
+/* new_news */
+.content_new_news {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+  margin-top: 100px;
+}
+
+.content_new_news h1 {
+  color: #fff;
+}
+.new_news-form {
+  display: grid;
+  width: 80%;
+}
+.new_news-form label {
+  margin-top: 30px;
+  color: #fff;
+  font-size: 20px;
+}
+.input_info {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  margin-top: 5px;
+}
+.new_news-form textarea {
+  width: 100%;
+  min-height: 200px;
+  margin-top: 5px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+}
+#media {
+  font-size: 20px;
+  margin-top: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.new_news-btn {
+  margin-top: 30px;
+  width: 70%;
+  color: #fff;
+  background-color: #1d6db4;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  height: 30px;
+  font-weight: 500;
+}
+.new_news-btn:hover {
+  background-color: blue;
+}
+
+/* oferta */
+.oferta_content {
+  width: 80%;
+}
