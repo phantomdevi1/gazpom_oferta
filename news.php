@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <title>Главная</title>
+    <title>Новости</title>
 </head>
 <body>
 <header>
@@ -30,14 +30,7 @@
         <input class="admin_input-btn" type="submit" value="Войти">
     </form>
 </div>
-<div class="content_index">
-    <p class="dont_go">Не хотите идти к нам?</p>
-    <p class="sit_home">Хотите заключить договор из дома?</p>
 
-    <div class="can_home-container">
-        <p>Мы даём вам такую возможность!</p>
-        <button onclick="document.location='oferta.php'">Перезаключить договор</button>
-    </div>
 
     <div class="events">
       <h2>События</h2>
@@ -87,7 +80,7 @@
         }
 
         // Запрос для извлечения событий
-        $sql = "SELECT * FROM Events ORDER BY event_date DESC LIMIT 2";
+        $sql = "SELECT * FROM Events ORDER BY event_date DESC";
         $result_news = $conn->query($sql);
 
         // Проверка наличия результатов

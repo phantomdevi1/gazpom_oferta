@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <title>Главная</title>
+    <title>Контакты</title>
 </head>
 <body>
 <header>
@@ -30,18 +30,7 @@
         <input class="admin_input-btn" type="submit" value="Войти">
     </form>
 </div>
-<div class="content_index">
-    <p class="dont_go">Не хотите идти к нам?</p>
-    <p class="sit_home">Хотите заключить договор из дома?</p>
-
-    <div class="can_home-container">
-        <p>Мы даём вам такую возможность!</p>
-        <button onclick="document.location='oferta.php'">Перезаключить договор</button>
-    </div>
-
-    <div class="events">
-      <h2>События</h2>
-        <?php
+<?php
         $servername = "localhost";
         $username = "root";
         $password = "";
@@ -77,43 +66,35 @@
         }
         ?>
 
-        <?php
-        // Создание подключения
-        $conn = new mysqli($servername, $username, $password, $dbname);
-
-        // Проверка подключения
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
-
-        // Запрос для извлечения событий
-        $sql = "SELECT * FROM Events ORDER BY event_date DESC LIMIT 2";
-        $result_news = $conn->query($sql);
-
-        // Проверка наличия результатов
-        if ($result_news->num_rows > 0) {
-            while($row = $result_news->fetch_assoc()) {
-              echo "<hr>";
-                echo "<div class='event'>";
-                if (!empty($row["event_media_url"])) {
-                    echo "<div class='event-media'><img src='" . $row["event_media_url"] . "' ></div>";
-                }
-                echo "<div class='event-details'>";
-                echo "<p class='event-date'>" . 'дата события: ' . $row["event_date"] . "</p>";
-                echo "<p class='event-title'>" . $row["event_title"] . "</p>";
-                echo "<p class='event-description'>" . $row["event_description"] . "</p>";
-                echo "</div>";
-                echo "</div>";
-            }
-        } else {
-            echo "0 результатов";
-        }
-
-        $conn->close();
-        ?>
+<div class="contacts_content">
+    <h1>Контакты</h1>
+    <div class="info_contact">
+      <div class="info_contact-title">
+        <p>Полное наименование</p>
+        <p>Почтовый адрес</p>
+        <p>Единый центр предоставления услуг</p>
+        <p>Телефон горячей линии</p>
+      </div>
+      <div class="info_contact-content">
+        <p>Акционерное общество "Газпром газораспределение Тверь"</p>
+        <p>170005, Российская Федерация, г. Тверь, ул. Фурманова, д. 12/4</p>
+        <p><a href="tel:84822520323">+7 4822 52-03-23</a>	</p>
+        <p><a href="tel:88001000154">8-800-100-01-54</a>	</p>
+      </div>
+      
     </div>
+    <div class="text" style="width: 100%">
+<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae70b9fb527979d1d5389203e34dd0aab29422090cefa208b17ef60587a4576f0&amp;source=constructor" width="100%" height="280" frameborder="0"></iframe>
 </div>
-
+<div class="bank_info">
+  <h2>Банковские реквизиты</h2>
+  <p>ИНН/КПП 6900000364/695201001</p>
+  <p>р/с 40702810406180000059</p>
+  <p>Тульский филиал АБ "РОССИЯ"</p>
+  <p>БИК 047003764</p>
+  <p>К/с № 30101810600000000764</p>
+</div>
+</div>
 <script>
     document.getElementById('logo').addEventListener('click', function() {
         document.getElementById('admin_input').style.display = 'flex';
@@ -123,6 +104,7 @@
         document.getElementById('admin_input').style.display = 'none';
     }
 </script>
+
 
 </body>
 </html>

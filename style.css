@@ -249,5 +249,94 @@ header {
 
 /* oferta */
 .oferta_content {
+  margin-top: 100px;
   width: 80%;
+  margin-bottom: 100px;
+}
+.oferta_form {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.oferta_form h2 {
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+.oferta_form h3 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.oferta_form input {
+  width: 60%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.oferta_form label {
+  font-size: 20px;
+}
+.oferta_form hr {
+  width: 60%;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.submit_oferta-btn {
+  background-color: #1d6db4;
+  cursor: pointer;
+  color: #fff;
+}
+.submit_oferta-btn:hover {
+  background-color: #fff;
+  color: #1d6db4;
+}
+
+/* contacts */
+.contacts_content {
+  color: #fff;
+  display: grid;
+  margin-top: 100px;
+  width: 80%;
+}
+.contacts_content h1 {
+  font-size: 50px;
+}
+.info_contact {
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+}
+.info_contact-title {
+  margin-left: 0px;
+}
+.info_contact-content {
+  margin-right: 0px;
+}
+.info_contact-title p {
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.info_contact-content p {
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+.info_contact-content p a {
+  color: #fff;
+}
+.bank_info {
+  margin-top: 100px;
+}
+.bank_info h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.bank_info p {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 24px;
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">    
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <title>Добавление новости</title>
+    <title>Добавление событий</title>
 
 </head>
 <body>
@@ -14,9 +14,9 @@
     <div class="toolbar">
         <a href="index.php">Главная</a>
         <a href="">Клиентам</a>
-        <a href="">Новости</a>
+        <a href="news.php">Новости</a>
         <a href="oferta.php">Оферта</a>
-        <a href="">Контакты</a>
+        <a href="contacts.php">Контакты</a>
     </div>
     <div class="gaz_num">
         <p>Газовая служба</p>
