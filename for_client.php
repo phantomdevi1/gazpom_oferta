@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">    
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <title>Новости</title>
+    <title>Клиентам</title>
 </head>
 <body>
 <header>
@@ -17,12 +17,7 @@
         <a href="oferta.php">Оферта</a>
         <a href="contacts.php">Контакты</a>
     </div>
-    <div class="gaz_num">
-        <p>Газовая служба</p>
-        <span>104</span>
-    </div>
-</header>
-<div class="admin_input" id="admin_input">
+    <div class="admin_input" id="admin_input">
     <h2>Авторизация <span class="close-icon" onclick="closeLoginForm()">✖</span></h2>
     <form class="admin_form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <input type="text" name="username" placeholder="Логин"><br>
@@ -30,11 +25,33 @@
         <input class="admin_input-btn" type="submit" value="Войти">
     </form>
 </div>
+    <div class="gaz_num">
+        <p>Газовая служба</p>
+        <span>104</span>
+    </div>
+</header>
+<div class="contacts_content">
+    <h2 class="consumer_safety_title">Безопасность потребителя</h2>
+    <p class="consumer_safety_content">При обнаружении запаха газа круглосуточно ЗВОНИТЕ вне загазованных помещений <span>104</span></p>
+    <h2 class="consumer_safety_title">Полезные памятки и видеоролики</h2>
+    <img src="img/img_for_client1.jpg" alt="">
+    <img src="img/img_for_client2.jpg" alt="">
+    <div class="video_player">
+        <iframe class="iframe_video" src="https://www.youtube.com/embed/l-MNvkLrdtM" title="Газпром Учебный фильм. Техника безопасности" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="iframe_video" src="https://www.youtube.com/embed/6ohjjxha5YM" title="Если вы почувствовали запах газа" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="iframe_video" src="https://www.youtube.com/embed/HiAtnWhOm84" title="Правила безопасного использования газа в быту" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+</div>
+<script>
+    document.getElementById('logo').addEventListener('click', function() {
+        document.getElementById('admin_input').style.display = 'flex';
+    });
 
-
-    <div class="events">
-      <h2>События</h2>
-        <?php
+    function closeLoginForm() {
+        document.getElementById('admin_input').style.display = 'none';
+    }
+    <?php
         $servername = "localhost";
         $username = "root";
         $password = "";
@@ -69,53 +86,6 @@
             $conn->close();
         }
         ?>
-
-        <?php
-        // Создание подключения
-        $conn = new mysqli($servername, $username, $password, $dbname);
-
-        // Проверка подключения
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
-
-        // Запрос для извлечения событий
-        $sql = "SELECT * FROM Events ORDER BY event_date DESC";
-        $result_news = $conn->query($sql);
-
-        // Проверка наличия результатов
-        if ($result_news->num_rows > 0) {
-            while($row = $result_news->fetch_assoc()) {
-              echo "<hr>";
-                echo "<div class='event'>";
-                if (!empty($row["event_media_url"])) {
-                    echo "<div class='event-media'><img src='" . $row["event_media_url"] . "' ></div>";
-                }
-                echo "<div class='event-details'>";
-                echo "<p class='event-date'>" . 'дата события: ' . $row["event_date"] . "</p>";
-                echo "<p class='event-title'>" . $row["event_title"] . "</p>";
-                echo "<p class='event-description'>" . $row["event_description"] . "</p>";
-                echo "</div>";
-                echo "</div>";
-            }
-        } else {
-            echo "0 результатов";
-        }
-
-        $conn->close();
-        ?>
-    </div>
-</div>
-
-<script>
-    document.getElementById('logo').addEventListener('click', function() {
-        document.getElementById('admin_input').style.display = 'flex';
-    });
-
-    function closeLoginForm() {
-        document.getElementById('admin_input').style.display = 'none';
-    }
 </script>
-
 </body>
 </html>

@@ -197,6 +197,20 @@ header {
   gap: 30px;
   margin-top: 100px;
 }
+.href_admin_toolbar {
+  background-color: #1d6db4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 60%;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.href_admin_toolbar:hover {
+  background-color: #fff;
+  color: #1d6db4;
+}
 
 .content_new_news h1 {
   color: #fff;
@@ -204,6 +218,7 @@ header {
 .new_news-form {
   display: grid;
   width: 80%;
+  margin-bottom: 100px;
 }
 .new_news-form label {
   margin-top: 30px;
@@ -240,7 +255,7 @@ header {
   border: none;
   border-radius: 5px;
   font-size: 20px;
-  height: 30px;
+  height: 40px;
   font-weight: 500;
 }
 .new_news-btn:hover {
@@ -339,4 +354,50 @@ header {
   text-align: center;
   margin-bottom: 15px;
   font-size: 24px;
+}
+
+/* view oferta */
+.content_view_oferta {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+  margin-top: 100px;
+  color: #fff;
+}
+.table_title {
+  padding-top: 30px;
+  border-bottom: 2px solid white;
+}
+.table_content-view_oferta {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-bottom: 1px solid white;
+}
+
+/* for client */
+.consumer_safety_title {
+  font-size: 40px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.consumer_safety_content {
+  font-size: 20px;
+}
+.consumer_safety_content span {
+  color: red;
+  font-weight: 700;
+  font-size: 30px;
+}
+.video_player {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+.iframe_video {
+  width: 1000px;
+  height: 500px;
 }

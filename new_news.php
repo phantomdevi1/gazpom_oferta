@@ -6,14 +6,13 @@
     <link rel="stylesheet" href="style.css">    
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <title>Добавление событий</title>
-
 </head>
 <body>
 <header>
     <img src="img/logo.svg" alt="">
     <div class="toolbar">
         <a href="index.php">Главная</a>
-        <a href="">Клиентам</a>
+        <a href="for_client.php">Клиентам</a>
         <a href="news.php">Новости</a>
         <a href="oferta.php">Оферта</a>
         <a href="contacts.php">Контакты</a>
@@ -24,7 +23,8 @@
     </div>
 </header>
 
-<div class="content_new_news">
+<div class="content_new_news">   
+        <button class="href_admin_toolbar" onclick="document.location = 'view_oferta.php'">Просмотр заполненных оферт</button>    
     <h1>Добавление события</h1>
     <form class="new_news-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
         <label for="title">Заголовок новости:</label>

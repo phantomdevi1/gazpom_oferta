@@ -12,7 +12,7 @@
     <img src="img/logo.svg" alt="" id="logo">
     <div class="toolbar">
         <a href="index.php">Главная</a>
-        <a href="">Клиентам</a>
+        <a href="for_client.php">Клиентам</a>
         <a href="news.php">Новости</a>
         <a href="oferta.php">Оферта</a>
         <a href="contacts.php">Контакты</a>
