@@ -73,18 +73,7 @@
                     $target_file = $target_dir . basename($_FILES["media"]["name"]);
                     if (move_uploaded_file($_FILES["media"]["tmp_name"], $target_file)) {
                        
-                        $servername = "localhost";
-                        $username = "root";
-                        $password = "";
-                        $dbname = "oferta";
-
-                        // Создание подключения
-                        $conn = new mysqli($servername, $username, $password, $dbname);
-
-                        // Проверка подключения
-                        if ($conn->connect_error) {
-                            die("Connection failed: " . $conn->connect_error);
-                        }
+                        include 'config.php';
 
                         // Получение данных из формы
                         $title = $_POST['title'];

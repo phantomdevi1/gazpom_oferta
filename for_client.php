@@ -52,19 +52,10 @@
         document.getElementById('admin_input').style.display = 'none';
     }
     <?php
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "oferta";
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {           
 
-            // Создание подключения
-            $conn = new mysqli($servername, $username, $password, $dbname);
-
-            // Проверка подключения
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
-            }
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {       
+                
+        include 'config.php';
 
             // Получение введенного логина и пароля
             $entered_username = $_POST['username'];

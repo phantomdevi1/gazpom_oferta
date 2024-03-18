@@ -27,18 +27,8 @@
         <button class="href_admin_toolbar" onclick="document.location = 'new_news.php'">Добавление событий</button>    
     <h1>Заполненные оферты</h1>
     <?php
-// Establish a connection to your database
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "oferta";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+    
+include 'config.php';
 
 // Fetch data from the tables
 $sql = "SELECT * FROM Gas_Equipment 

@@ -35,19 +35,9 @@
     <div class="events">
       <h2>События</h2>
         <?php
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "oferta";
         if ($_SERVER["REQUEST_METHOD"] == "POST") {           
 
-            // Создание подключения
-            $conn = new mysqli($servername, $username, $password, $dbname);
-
-            // Проверка подключения
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
-            }
+            include 'config.php';
 
             // Получение введенного логина и пароля
             $entered_username = $_POST['username'];
@@ -72,12 +62,7 @@
 
         <?php
         // Создание подключения
-        $conn = new mysqli($servername, $username, $password, $dbname);
-
-        // Проверка подключения
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
+        include 'config.php';
 
         // Запрос для извлечения событий
         $sql = "SELECT * FROM Events ORDER BY event_date DESC";

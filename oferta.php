@@ -31,19 +31,10 @@
     </form>
 </div>
 <?php
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "oferta";
+        
         if ($_SERVER["REQUEST_METHOD"] == "POST") {           
 
-            // Создание подключения
-            $conn = new mysqli($servername, $username, $password, $dbname);
-
-            // Проверка подключения
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
-            }
+            include 'config.php';
 
             // Получение введенного логина и пароля
             $entered_username = $_POST['username'];
@@ -115,19 +106,7 @@
 
         <?php
         if(isset($_POST['submit'])) {
-            // Подключение к базе данных (замените данными вашей базы данных)
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $dbname = "oferta";
-
-            // Создание подключения
-            $conn = new mysqli($servername, $username, $password, $dbname);
-
-            // Проверка подключения
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
-            }
+            include 'config.php';
 
             // Получение данных из формы и обработка безопасности
             $full_name = mysqli_real_escape_string($conn, $_POST['full_name']);

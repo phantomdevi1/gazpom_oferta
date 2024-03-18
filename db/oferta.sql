@@ -31,7 +31,7 @@ CREATE TABLE `admins` (
   `id` int NOT NULL,
   `login` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 --
 -- Дамп данных таблицы `admins`
@@ -52,7 +52,7 @@ CREATE TABLE `Events` (
   `event_date` date DEFAULT NULL,
   `event_description` text,
   `event_media_url` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 --
 -- Дамп данных таблицы `Events`
@@ -79,7 +79,7 @@ CREATE TABLE `Gas_Equipment` (
   `installation_date` date NOT NULL,
   `last_maintenance_date` date DEFAULT NULL,
   `status` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 --
 -- Дамп данных таблицы `Gas_Equipment`
@@ -101,7 +101,7 @@ CREATE TABLE `Ownership_Documents` (
   `document_number` varchar(50) NOT NULL,
   `date_of_issue` date NOT NULL,
   `issued_by` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 --
 -- Дамп данных таблицы `Ownership_Documents`
@@ -124,7 +124,7 @@ CREATE TABLE `Passports` (
   `address` varchar(255) NOT NULL,
   `issuing_authority` varchar(255) NOT NULL,
   `date_of_issue` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 --
 -- Дамп данных таблицы `Passports`
