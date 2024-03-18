@@ -33,6 +33,8 @@
 <div class="contacts_content">
     <h2 class="consumer_safety_title">Безопасность потребителя</h2>
     <p class="consumer_safety_content">При обнаружении запаха газа круглосуточно ЗВОНИТЕ вне загазованных помещений <span>104</span></p>
+    <h2 class="consumer_safety_title">Файл для заполненния оферты</h2>
+    <iframe class="iframe_video" src="https://www.tver-gaz.ru/clients/documents/Заявка%20на%20присоединение.pdf"></iframe>
     <h2 class="consumer_safety_title">Полезные памятки и видеоролики</h2>
     <img src="img/img_for_client1.jpg" alt="">
     <img src="img/img_for_client2.jpg" alt="">

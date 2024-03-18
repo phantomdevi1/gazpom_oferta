@@ -102,6 +102,7 @@
 
         <hr>
         
+        
         <input class="submit_oferta-btn" type="submit" name="submit" value="Переоформить">
 
         <?php
