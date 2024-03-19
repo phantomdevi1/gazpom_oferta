@@ -409,6 +409,11 @@ header {
   .contacts_content img {
     width: 80%;
   }
+
+  /* new news */
+  .href_admin_toolbar {
+    display: none;
+  }
 }
 @media screen and (width < 1500px) {
   .gaz_num {
@@ -501,6 +506,11 @@ header {
     margin: 15px;
   }
 
+  /* new news */
+  .content_new_news {
+    width: 80%;
+  }
+
   /* login */
   .admin_input {
     width: 80%;
@@ -547,6 +557,12 @@ header {
     width: 100%;
     max-height: 300px;
   }
+
+  /* new news */
+  #media {
+    width: 80%;
+    font-size: 15px;
+  }
 }
 
 @media screen and (width < 430px) {
@@ -583,6 +599,12 @@ header {
   /* for client */
   .iframe_video {
     max-height: 150px;
+  }
+
+  /* new news */
+  .new_news-btn {
+    font-size: 15px;
+    width: 100%;
   }
 }
 @media screen and (width < 370px) {
