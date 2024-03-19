@@ -35,7 +35,7 @@
     <p class="sit_home">Хотите заключить договор из дома?</p>
 
     <div class="can_home-container">
-        <p>Мы даём вам такую возможность!</p>
+        <p>Мы предоставляем вам такую возможность!</p>
         <button onclick="document.location='oferta.php'">Перезаключить договор</button>
     </div>
 

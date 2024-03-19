@@ -401,3 +401,212 @@ header {
   width: 1000px;
   height: 500px;
 }
+
+/* adaptive */
+
+@media screen and (width < 1750px) {
+  /* for client */
+  .contacts_content img {
+    width: 80%;
+  }
+}
+@media screen and (width < 1500px) {
+  .gaz_num {
+    display: none;
+  }
+
+  /* for client */
+  .video_player {
+    width: 100%;
+  }
+  .iframe_video {
+    width: 80%;
+    max-height: 500px;
+  }
+}
+
+@media screen and (width < 1350px) {
+  header {
+    flex-direction: column;
+  }
+  .toolbar {
+    margin: 0 auto;
+  }
+}
+@media screen and (width < 1075px) {
+  /* index */
+
+  .content_index {
+    text-align: center;
+  }
+  .dont_go,
+  .sit_home,
+  .can_home-container p {
+    font-size: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .can_home-container {
+    margin-top: 50px;
+  }
+  .events {
+    width: 80%;
+    text-align: center;
+  }
+
+  /* contact */
+  .info_contact {
+    text-align: center;
+  }
+  .info_contact-title {
+    display: none;
+  }
+  .info_contact-content {
+    margin: 0 auto;
+  }
+
+  /* for client */
+  .contacts_content {
+    text-align: center;
+  }
+
+  /* login */
+  .admin_input {
+    height: 222px;
+  }
+  .admin_form {
+    width: 100%;
+  }
+  .admin_form input {
+    width: 80%;
+  }
+  .admin_input h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (width < 989px) {
+  /* index */
+  .toolbar {
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  .event-media img,
+  .event-details {
+    width: 80%;
+    padding: 0px;
+  }
+  .event-details p {
+    margin: 15px;
+  }
+
+  /* login */
+  .admin_input {
+    width: 80%;
+  }
+  .admin_input {
+    height: 300px;
+  }
+}
+
+@media screen and (width < 640px) {
+  /* index */
+  .can_home-container button {
+    font-size: 30px;
+  }
+  .events {
+    width: 100%;
+  }
+
+  /* oferta */
+  .oferta_form {
+    text-align: center;
+  }
+  .oferta_form h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .oferta_form input {
+    width: 90%;
+  }
+  .oferta_form hr {
+    width: 90%;
+  }
+
+  /* contact */
+  .bank_info {
+    text-align: center;
+  }
+
+  /* for client */
+  .contacts_content img {
+    width: 100%;
+  }
+  .iframe_video {
+    width: 100%;
+    max-height: 300px;
+  }
+}
+
+@media screen and (width < 430px) {
+  .toolbar a {
+    font-size: 30px;
+  }
+
+  /* index */
+
+  .dont_go,
+  .sit_home,
+  .can_home-container p {
+    font-size: 30px;
+  }
+  .events h2 {
+    font-size: 40px;
+  }
+  .event-media img,
+  .event-details {
+    width: 100%;
+  }
+  .can_home-container button {
+    margin: 0 auto;
+    width: 90%;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .dont_go,
+  .sit_home,
+  .can_home-container p {
+    margin-top: 20px;
+  }
+
+  /* for client */
+  .iframe_video {
+    max-height: 150px;
+  }
+}
+@media screen and (width < 370px) {
+  /* index */
+  header img {
+    width: 80%;
+  }
+
+  /* contact */
+  .contacts_content h1 {
+    font-size: 30px;
+  }
+  .bank_info h2 {
+    font-size: 30px;
+  }
+
+  /* for client */
+  .consumer_safety_title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (width < 330px) {
+  .contacts_content {
+    width: 100%;
+  }
+}
