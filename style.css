@@ -403,6 +403,7 @@ header {
 }
 
 footer {
+  background-color: #1d6db4;
   height: 200px;
   display: flex;
   gap: 10px;
@@ -410,7 +411,6 @@ footer {
 }
 footer img {
   height: 120px;
-  margin: 10px;
   margin: 2%;
 }
 
@@ -563,9 +563,13 @@ footer img {
   footer {
     flex-direction: column;
     text-align: center;
-    margin-top: 300px;
+    min-height: 650px;
   }
   .number_footer {
+    margin: 0 auto;
+  }
+  footer img {
+    width: 200px;
     margin: 0 auto;
   }
 }

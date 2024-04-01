@@ -86,7 +86,7 @@
 </div>
 </div>
 <footer>
-    <img src="img/logo.svg" alt="">
+    <img src="img/footer_logo.png" alt="">
     <div class="adress_footer">
         <p>170005, Тверь, ул. Фурманова, 12/4</p>
         <p>© 2023 АО «Газпром газораспределение Тверь»</p>
