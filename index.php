@@ -97,6 +97,30 @@
     </div>
 </div>
 
+<footer>
+    <img src="img/logo.svg" alt="">
+    <div class="adress_footer">
+        <p>170005, Тверь, ул. Фурманова, 12/4</p>
+        <p>© 2023 АО «Газпром газораспределение Тверь»</p>
+        <p>Режим работы</p>
+        <p>Пн-Пт: 8:30-17:30, перерыв 12:30-13:30</p>
+        <p>Сб-Вс - Выходной</p>
+    </div>
+    <div class="number_footer">
+        <p>Тел.: +74822522758</p>
+        <p>8-800-100-01-54</p>
+        <p>info@tver-gaz.ru</p>
+    </div>
+    <div class="web_footer">
+        <p>Социальные сети</p>
+        <p>ООО "Газпром межрегионгаз"</p>
+        <div class="web_img-footer">
+            <a href="https://t.me/news_mrg"><img src="img/telegram_1.png" alt=""></a>
+            <a href="https://vk.com/gazprom_mrg"><img src="img/vk_1.png" alt=""></a>
+        </div>
+    </div>
+</footer>
+
 <script>
     document.getElementById('logo').addEventListener('click', function() {
         document.getElementById('admin_input').style.display = 'flex';
