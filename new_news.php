@@ -98,18 +98,7 @@
             } else {
                 // Если файл изображения не выбран, вставляем запись без ссылки на изображение
                 // Подключение к базе данных (замените данными вашего сервера)
-                $servername = "localhost";
-                $username = "root";
-                $password = "";
-                $dbname = "oferta";
-
-                // Создание подключения
-                $conn = new mysqli($servername, $username, $password, $dbname);
-
-                // Проверка подключения
-                if ($conn->connect_error) {
-                    die("Connection failed: " . $conn->connect_error);
-                }
+              include 'config.php';
 
                 // Получение данных из формы
                 $title = $_POST['title'];
