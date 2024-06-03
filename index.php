@@ -31,10 +31,11 @@
     </form>
 </div>
 <div class="content_index">
-    <p class="dont_go">Не хотите идти к нам?</p>
-    <p class="sit_home">Хотите заключить договор из дома?</p>
+    
 
     <div class="can_home-container">
+        <p>Не хотите идти к нам?</p>
+        <p>Хотите заключить договор из дома?</p>
         <p>Мы предоставляем вам такую возможность!</p>
         <button onclick="document.location='oferta.php'">Перезаключить договор</button>
     </div>
@@ -97,6 +98,10 @@
     </div>
 </div>
 
+<div class="events">
+      <h2>Наши филиалы</h2>
+      </div>
+      <iframe class="map_index" src="https://yandex.ru/map-widget/v1/?um=constructor%3A81757469830098176acd66f1b1163fd899f4927e92eb0b6f281c15accdf102e0&amp;source=constructor" frameborder="0"></iframe>
 <footer>
     <img src="img/footer_logo.png" alt="">
     <div class="adress_footer">

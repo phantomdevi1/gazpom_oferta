@@ -69,10 +69,10 @@ header {
 }
 .can_home-container p {
   color: #fff;
-  font-size: 96px;
+  font-size: 40px;
   font-weight: 500;
   max-width: 940px;
-  margin-top: 140px;
+  margin-top: 30px;
   text-align: center;
 }
 .can_home-container button {
@@ -95,7 +95,7 @@ header {
 }
 
 .events {
-  margin-top: 200px;
+  margin-top: 100px;
   width: 1000px;
 }
 
@@ -186,6 +186,12 @@ header {
 }
 .admin_input-btn:hover {
   background-color: blue;
+}
+.map_index{
+  width: 100%;
+  height: 500px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 /* new_news */
